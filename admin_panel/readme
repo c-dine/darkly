@@ -1,0 +1,4 @@
+Aller dans robots.txt
+-> metter whatever apres l'addresse
+On obtient un fichier avec le mot de passe de root. Decrypter le mot de passe de root md5 -> qwerty123@
+Chercher la zone admin avec le script et entrer les identifiants.

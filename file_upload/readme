@@ -1,0 +1,6 @@
+Upload un fichier jpeg valide
+Ouvrir Network
+Click droit sur la requete (dans Firefox)
+Editer l'extension du fichier dans le body pour mettre php
+Eventuellement editer body
+Send et checker la reponse

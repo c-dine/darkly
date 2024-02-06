@@ -1,0 +1,6 @@
+1 UNION select username from user
+    -> "Table 'Member_Sql_Injection.user' doesn't exist"
+
+users exists
+
+
