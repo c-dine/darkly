@@ -1,0 +1,4 @@
+Redirection avec les icones des reseaux sociaux.
+
+On peut rediriger vers n'importe quel site sous la couverture du vrai nom de domaine :
+http://192.168.59.3/?page=redirect&site=google.com

@@ -1,3 +1,4 @@
 Page Survey -> copier requete curl associee au vote.
 Dans terminal, changer valeur du vote et mettre + de 10.
+L'input est valide dans le front mais pas dans le back.
 Le flag s'affiche.

