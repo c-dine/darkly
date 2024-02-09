@@ -1,0 +1,9 @@
+DATA URI XSS (CROSS-SITE SCRIPTING) ATTACK
+
+Cliquer sur la 3eme image de la NSA
+Dans l'url, modifier la partie apres src=
+On veut ce format :
+	data:[<MIME-type>][;base64],<data>
+Encoder un petit script en base64 (https://www.base64encode.org/)
+Ajouter le data uri "data:text/html;base64,PHNjcmlwdD5hbGVydCgib2siKTwvc2NyaXB0Pg"
+Le data uri est utilise dans le src d'une balise html img, executant le script
